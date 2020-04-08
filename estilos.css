@@ -31,12 +31,10 @@ header a{
 header ul{
     display: flex;
     margin-top: 25px;
-
 }
 header ul li{
     margin-right: 15px;
     text-align: center;
-
 }
 nav ul li a:hover{
     font-size: 18px;
@@ -53,6 +51,18 @@ body{
 }
 
 /*SUB-SECCION "BANNERS*/
+a.button{
+    padding 0 10px;
+    font-size: 20px;
+    color: #200303;
+    font-weight: bold;
+}
+a.button:hover{
+    transition: 0.2s;
+    border-bottom: 3px solid #200303;
+    filter:drop-shadow(2px 2px 2px rgba(111, 0, 0, 0.3)); 
+}
+
 h3{
     color:#200303;
     font-family: 'Bangers', cursive;
@@ -96,7 +106,7 @@ div.texto2{
     padding-left: 25px;
 }
 /*SUB-SECCION "ENVIOS"*/
-.contenedor-metodos, .contenedor-prod{
+.contenedor-metodos, .contenedor-contactos{
     display: flex;
     flex-wrap: wrap;
 }
@@ -171,7 +181,7 @@ img.productos {
 
 /*SECCION "QUIENES SOMOS"*/
 .contenedor-quienessomos {
-    text-align: center;
+    text-align: justify;
     margin: 0 70px;;
     font-size: 24px;
     font-weight: bold;
@@ -179,6 +189,7 @@ img.productos {
 .quienessomos {
     margin-bottom: 50px;
     margin-top: -20px;
+    text-align: center;
 }
 
 /*SECCION "CATALOGO"*/
@@ -189,13 +200,13 @@ img.productos {
 }
 .img-catalogo{
     padding-left: 100px;
-    width: 700px;
+    width: 600px;
     height: 350px;
 }
 .img-catalogo:hover{
     transition: 0.2s;
-    width: 725px;
-    height: 365px;
+    width: 750px;
+    height: 415px;
     filter:drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
 }
 .productos {
@@ -217,4 +228,57 @@ img.productos {
 }
 #cat li{
     margin: 0 50px;
+}
+
+/*SECCION "PROCESO"*/
+.proceso {
+    display: block;
+    margin: 0 150px;
+    font-size: 20px;
+    text-align: center;
+}
+img.proceso-img {
+    width: 400px;
+    transform: rotate(0);
+    transition: 0.9s;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+img.proceso-img:hover{
+    transform: rotate(90deg);
+    transition: 0.8s;
+}
+
+/*SECCION "CONTACTOS"*/
+.contenedor-contactos img{
+    width: 100px;
+}
+.contenedor-contactos img:hover{
+    transition: 0.2s;
+    width: 102px;
+    filter:drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
+}
+#contactos .item {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/*SECCION "HISTORIA"*/
+.lista-historia{
+    margin:0 50px;
+    padding:15px 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+img.timeline {
+    width: 350px;
+    border-radius: 50px;
+    filter:drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
 }
